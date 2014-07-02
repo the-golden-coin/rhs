@@ -3,12 +3,12 @@
   #siteTable & {
     padding: 5px;
     overflow-x: hidden;
-    background-color: #eee8d5;
+    background-color: @base2;
     border: 0px;
-    border-bottom: 3px solid #586e75 !important;
+    border-bottom: 3px solid @base01 !important;
   }
 
-  /* links bottom bar */
+  // links bottom bar
   .tagline,
   .entry .buttons li a,
   .domain,
@@ -16,7 +16,7 @@
     color: #555;
   }
 
-  /* stickies */
+  // stickies 
   &.stickied a.title {
   &.stickied a.title:visited,
   &.stickied a.title.visited {
@@ -25,24 +25,24 @@
     }
   }
 
-  /* links titles */
+  // links titles
   .title {
-    color: #268bd2;
+    color: @blue;
   }
 
   & .title:visited, &.visited .title {
-    /* color: #dc322f; */
+    // color: #dc322f;
   }
 
 }
 
 .link {
-  /* remove ranks from frontpage */
+  // remove ranks from frontpage
   .rank {
     display: none;
   }
 
-  /* recolor score */
+  // recolor score
   .score {
     color: #999 !important;
   }
@@ -52,7 +52,7 @@
   background-color: transparent;
 }
 
-/* highlight comments */
+// highlight comments
 a.comments {
   color: #d33682 !important;
 }
