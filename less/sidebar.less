@@ -1,0 +1,80 @@
+.side {
+  /* daily quest boxes */
+  blockquote {
+    margin: 0;
+    margin-bottom: 5px;
+    border-style: solid;
+    border-width: 26px 26px 26px 26px;
+    border-image: url(%%border1%%) 52 52 52 52 fill repeat;
+
+    h1, h2 {
+      color: black;
+      text-align: center;
+      border-bottom: 2px solid #867252;
+    }
+  }
+}
+
+/* hearthstone logo */
+.titlebox .redditname a {
+  display: block;
+  width: 246px;
+  height: 89px;
+  background: url(%%logo%%) no-repeat scroll 0 0 transparent;
+  background-size: contain;
+  font-size: 0 !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* subscribers */
+.titlebox .subscribers {
+  .word {
+    display: none;
+  }
+
+  .number::after {
+    content: " worthy opponents";
+  }
+}
+
+/* online users */
+.users-online {
+  .word {
+    display: none;
+  }
+
+  .number::after {
+    content: " players shuffling their decks"
+  }
+}
+
+/* remove background from moderator, submitter and flair controls */
+.titlebox form.toggle, .leavemoderator {
+  color: black;
+  background: 0;
+}
+
+/* 'submit a new link/self' and 'create your own subreddit' buttons */
+.morelink {
+  border: 0;
+  background: transparent;
+  border-style: solid;
+  border-width: 11px 10px 12px;
+  border-image: url(%%buttons%%) 11 10 12 fill repeat stretch;
+  line-height: 26px;
+  height: 26px;
+
+  &:hover {
+    background: transparent;
+    border-image: url(%%buttons-hover%%) 11 10 12 fill repeat stretch;
+  }
+
+  a, &:hover a {
+    color: #503c1f;
+  }
+
+  .nub {
+    display: none;
+  }
+}

@@ -1,0 +1,14 @@
+# ignore images
+*.png
+*.jpg
+*.gif
+
+# except those in images
+!images/*.png
+!images/*.jpg
+
+# OSX
+.DS_Store
+
+# node
+node_modules

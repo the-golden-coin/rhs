@@ -1,0 +1,18 @@
+{
+  "name": "rhs",
+  "description": "A collection of CSS customizations for /r/hearthstone.",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/the-golden-coin/rhs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/the-golden-coin/rhs/issues"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-less": "~0.9.0",
+    "load-grunt-tasks": "~0.3.0",
+    "grunt-contrib-clean": "~0.5.0"
+  }
+}

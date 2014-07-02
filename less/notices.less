@@ -1,0 +1,52 @@
+/* notices */
+.side .md > ol {
+  left: 450px;
+  list-style: none outside none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 34px;
+  z-index: 500;
+
+  li {
+    margin-bottom: 2px;
+
+    a {
+      color: #000;
+      display: block;
+      font-size: 12px;
+      line-height: 30px;
+      height: 30px;
+      padding: 0px 10px 0px 0px;
+      border: 1px solid #4D310B;
+      border-radius: 2px;
+      background-color: #FFF8F2;
+    }
+
+    /* syntax: 1. [Notice](link) */
+    a:before {
+      content: "Notice";
+      display: inline-block;
+      color: #fff;
+      background-color: #4D310B;
+      padding: 0px 10px 0px 10px;
+      margin-right: 10px;
+    }
+
+    /* syntax: 1. **[Important](link)** */
+    strong a {
+      border: 1px solid #B30000;
+    
+      &:before {
+        content: "Important";
+        background-color: #E60000;
+      }
+    }
+
+    /* attention seeker in submit page */
+    .submit-page & {
+      -webkit-animation: tada 2s 1s 1;
+      animation: tada 2s 1s 1;
+    }
+  }
+}

@@ -1,0 +1,58 @@
+.thing {
+
+  #siteTable & {
+    padding: 5px;
+    overflow-x: hidden;
+    background-color: #eee8d5;
+    border: 0px;
+    border-bottom: 3px solid #586e75 !important;
+  }
+
+  /* links bottom bar */
+  .tagline,
+  .entry .buttons li a,
+  .domain,
+  .domain a {
+    color: #555;
+  }
+
+  /* stickies */
+  &.stickied a.title {
+  &.stickied a.title:visited,
+  &.stickied a.title.visited {
+      font-weight: bold;
+      color: #859900;
+    }
+  }
+
+  /* links titles */
+  .title {
+    color: #268bd2;
+  }
+
+  & .title:visited, &.visited .title {
+    /* color: #dc322f; */
+  }
+
+}
+
+.link {
+  /* remove ranks from frontpage */
+  .rank {
+    display: none;
+  }
+
+  /* recolor score */
+  .score {
+    color: #999 !important;
+  }
+}
+
+.expando-button.selftext {
+  background-color: transparent;
+}
+
+/* highlight comments */
+a.comments {
+  color: #d33682 !important;
+}
